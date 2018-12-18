@@ -1,5 +1,4 @@
-#!/usr/bin/python3
-# -- coding: utf-8 -- 
+
 def binary_serach(list, item):
     low=0
     high=len(list)-1
@@ -15,7 +14,7 @@ def binary_serach(list, item):
     return None
 my_list=[1,3,5,7,9]
 
-def bs3(list,item):
+def wyc(list,item):
     mid=len(list)//2
     if list[mid]==item:
         return list[mid]
@@ -23,9 +22,9 @@ def bs3(list,item):
         return 0
     else:
         if item>list[mid]:
-            return bs3(list[mid:],item)
+            return wyc(list[mid:],item)
         else:
-            return bs3(list[:mid],item)
+            return wyc(list[:mid],item)
         
 lis=[1,3,5,7,9,11,13,15]
-print(bs3(lis,13)) 
+print(wyc(lis,13)) 

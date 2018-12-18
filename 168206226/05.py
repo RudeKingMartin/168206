@@ -1,22 +1,21 @@
-#!/usr/bin/python3
-# -- coding: utf-8 -- 
-def guibing(list1,list2):
-    list3=[]
+
+def guibing(lista,listb):
+    listc=[]
     i=j=0
-    while i<len(list1) and j<len(list2):
-        if list1[i]<list2[j]:
-            list3.append(list1[i])
+    while i<len(lista) and j<len(listb):
+        if lista[i]<listb[j]:
+            listc.append(lista[i])
             i+=1
         else:
-            list3.append(list2[j])
+            listc.append(listb[j])
             j+=1
-    if i==len(list1):
-        for a in list2[j:]:
-            list3.append(a)
+    if i==len(lista):
+        for a in listb[j:]:
+            listc.append(a)
     else:
-        for a in list1[i:]:
-            list3.append(a)
-    return list3        
+        for a in lista[i:]:
+            listc.append(a)
+    return listc        
 def merge_sort(lists):
     if len(lists)<=1:
         return lists

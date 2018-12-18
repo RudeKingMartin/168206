@@ -31,19 +31,19 @@ start="hit"#开始状态（可随意更改）
 end="cog"#终点状态（可随意更改）
 adict=['hot','dot','dog','lot','log']#规定拥有可走的路径（可随意更改）
 
-aaa=find_path(start,end,adict)#形成字典，并且有唯一路径，且为最短路径
-#print(aaa)
+dic=find_path(start,end,adict)#形成字典，并且有唯一路径，且为最短路径
+#print(dic)
 
-jieguo=[]#沿着路径从后往前找，从而打印路径
+res=[]#沿着路径从后往前找，从而打印路径
 adict.append(start)
-jieguo.append(end)
-#print(jieguo)
+res.append(end)
+#print(res)
 while end!=start:
 	for word in adict:
-		if end in aaa[word]:
+		if end in dic[word]:
 			end=word
 			#print(end)
-			jieguo.append(end)
-jieguo.reverse()#逆序一下
-print('最终转换路径如此列表顺序:',jieguo)
+			res.append(end)
+res.reverse()#逆序一下
+print('最终转换路径如此列表顺序:',res)
 	

@@ -1,13 +1,5 @@
-#!/usr/bin/python3
-# -- coding: utf-8 -- 
-'''def fb(num):
-    if num<=2:
-        return 1
-    else:
-        return fb(num-1)+fb(num-2)
-for i in range(1,30):
-    print(fb(i),end=" ")'''
-def fa(n):
+
+def ace(n):
     if n==1:
         return [1]
     if n==2:
@@ -17,5 +9,5 @@ def fa(n):
         list.append(list[-2]+list[-1])
     return list
 if __name__=="__main__":
-    x=int(input("请输入需要求个数："))
-    print(fa(x))
+    x=int(input("请输入个数："))
+    print(ace(x))
