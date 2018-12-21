@@ -17,3 +17,5 @@ changepiano.py 换钢琴算法
 dijkstra.py 狄克斯特拉算法
 
 6226.py 上机题目 换字母
+
+judgethief.py 抓小偷考试题
